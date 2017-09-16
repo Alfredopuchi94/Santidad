@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAfirmadorsTable extends Migration
+class CreateAfirmadoresTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateAfirmadorsTable extends Migration
      */
     public function up()
     {
-        Schema::create('afirmadors', function (Blueprint $table) {
+        Schema::create('afirmadores', function (Blueprint $table) {
             $table->increments('id');
              $table->string('nombreAfirmador')->unique();
             $table->integer('id_enlace')->unsigned();
@@ -30,6 +30,6 @@ class CreateAfirmadorsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('afirmadors');
+        Schema::dropIfExists('afirmadores');
     }
 }

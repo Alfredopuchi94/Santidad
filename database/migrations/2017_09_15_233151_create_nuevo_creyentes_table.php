@@ -14,7 +14,7 @@ class CreateNuevoCreyentesTable extends Migration
     public function up()
     {
         Schema::create('nuevo_creyentes', function (Blueprint $table) {
-            
+
             $table->integer('cedula');
             $table->primary('cedula');
             $table->string('nombrePersona');
